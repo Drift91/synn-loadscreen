@@ -15,6 +15,8 @@ var logger =
 
     addToLog: function(message)
     {
+        if(!config.enableLog) return;
+
         logger.logEntries.push(message); 
 
         if(logger.logEntries.length > logger.logListSize)
@@ -27,6 +29,8 @@ var logger =
 
     render: function()
     {
+        if(!config.enableLog) return;
+
         for(i = 0; i < logger.logListSize; i++)
         {
             var entry = logger.logEntries[i];

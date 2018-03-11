@@ -138,5 +138,17 @@ var config =
         should swap images.
      */
     backgroundSpeed: 10 * 1000,
+
+    /*
+        Which style of animation should the background transition be?
+        zoom = background zooms in and out.
+        slide = transtion backgrounds from sliding right and back again.
+        fade = fade the background out and back in.
+    */
     backgroundStyle: "zoom",
+
+    /*
+        Should the log be visible? Handy for debugging!
+    */
+    enableLog: true,
 }
