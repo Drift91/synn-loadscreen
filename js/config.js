@@ -61,18 +61,21 @@ var config =
     */
     loadingMessages:
     [
-        "Rart at møde dig",
-        "Bunden i vejret eller resten i håret!",
-        "Vær så god!",
-        "Glædelig jul og godt nytår",
-        "おはようございます",
-        "わたしは元気です。ありがとう",
-        "変わりないです",
-        "歡迎光臨",
-        "我很高興跟你見面",
-        "환영합니다",
-        "이름은 무엇입니까?",
-        "... 를 한국말로 어떻게 말해요?"
+        "Picking up snails... &#x1f40c;",
+        "Placing snails on the map... &#x1f40c;",
+        "Crushing a snail.... &#x1f40c; &#x1f528;",
+        "Stepping on a snail.... &#x1f40c; &#x1f462;",
+        "Putting slugs back into their shell.. &#x1f41a.",
+        "Playing cricket with a snail... &#x1f3cf",
+        "Programming snail AI... &#x1f9e0;",
+        "Selling snails to a french guy. &#x1f956;",
+        "Eating FiveM's mascot snail... &#x1f374;",
+        "Syntasu is snailsome! &#x1f60d;",
+        "Oof!",
+        "Learning a snail to drive... &#x1f697;",
+        "Golfing using a snail... &#x1f3cc;",
+        "Calling PETA for animal abuse... &#x1f4f1;",
+        "No snails were hurt during this loadscreen. &#x1f691;",
     ],
  
     /*
