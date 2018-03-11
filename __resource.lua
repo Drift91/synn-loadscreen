@@ -19,6 +19,7 @@ files {
     
     'js/synn.js',
     'js/config.js',
+    'js/logger.js',
     'js/progressbar-handler.js',
     'js/progressbar-main.js',
     'js/progressbar-renderer.js',

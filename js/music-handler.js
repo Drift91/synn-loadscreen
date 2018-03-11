@@ -61,21 +61,25 @@ function onPlayerStateChange(event)
 
 function onPlayerError(event)
 {
+    var idx = musicIndex % config.music.length;
+    var vid = config.music[idx];
+
     switch (event.data) 
     {
         case 2:
-            console.log("Invalid video url!");
+            logger.addToLog("The video id: " + vid + " seems invalid, wrong video id?" );
             break;
         case 5:
-            console.log("HTML 5 player error!");
+            logger.addToLog("An HTML 5 player issue occured on video id: " + vid);
         case 100:
-            console.log("Video not found!");
+            logger.addToLog("Video " + vid + "does not exist, wrong video id?" );
         case 101:
         case 150:
-            console.log("Video embedding not allowed.");
+            logger.addToLog("Embedding for video id " + vid + " was not allowed.");
+            logger.addToLog("Please consider removing this video from the playlist.");
             break;
         default:
-            console.log("Looks like you got an error bud.")
+            logger.addToLog("An unknown error occured when playing: " + vid);
     }
 
     skip();
@@ -93,9 +97,7 @@ function play()
 
     var idx = musicIndex % config.music.length;
     var videoId = config.music[idx];
-
-    console.log("Playing next.. id: " + idx + " vid:" + videoId);
-
+    
     player.loadVideoById(videoId, 0, "tiny");
     player.playVideo();
 }
