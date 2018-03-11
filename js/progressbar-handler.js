@@ -67,8 +67,19 @@ function GetTypeProgress(type)
 {
     if(states[type] != null)
     {
-        var progress = states[type].done / states[type].count;
-        return Math.round(progress * 100);
+        var doneCount = states[type].done;
+        var totalCount = states[type].count;
+
+        if(doneCount <= 0 || isNaN(doneCount) || 
+           totalCount <= 0 || isNaN(totalCount))
+        {
+            return 0;
+        }
+        else
+        {
+            var progress = states[type].done / states[type].count;
+            return Math.round(progress * 100);
+        }
     }
 
     return 0;
@@ -89,10 +100,13 @@ function GetTotalProgress()
             totalStates++;
         }
     }
-    
-    //Dont want to divide by zero because it will return NaN.
-    //Be nice and return a zero for us.
-    if(totalProgress == 0) return 0;
-    
-    return totalProgress / totalStates;
+
+    if(totalProgress <= 0 || isNaN(totalProgress) ||
+       totalStates <= 0 || isNaN(totalStates) )
+    {
+        return 0;
+    }
+
+    var progress = totalProgress / totalStates;
+    return Math.round(progress * 100);
 }
