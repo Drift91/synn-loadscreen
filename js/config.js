@@ -96,12 +96,7 @@ var config =
     */
     music:
     [
-        "4GFAZBKZVJY", "fKopy74weus", "7wtfhZwyrcc", "vWdjWYhEONA",
-        "JGwWNGJdvx8", "SlmOBsUurUo", "IPfJnp1guPc", "UceaB4D0jpo",
-        "K_9tX4eHztY", "a01QQZyl-_I", "lw3Or6eqIpI", "3H6amDbAwlY",
-        "swYdKF1MpWg", "hLQl3WQQoQ0", "otCpCn0l4Wo", "QAo_Ycocl1E",
-        "NxxjLD2pmlk", "p6Io6XBRRUs", "FM7MFYoylVs", "5Wiio4KoGe8",
-        "nUTF237wZ74", "AMCwYdTJ_PE", "SoMeB4QBVug", "8sV6AT6jVuI"
+        "vWdjWYhEONA", "SoMeB4QBVug", "8sV6AT6jVuI"
     ],
  
  
