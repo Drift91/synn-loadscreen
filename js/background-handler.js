@@ -14,7 +14,7 @@ function NextBackground()
 
     switch (config.backgroundStyle) 
     {
-        case "slideright":
+        case "slide":
             AnimationSlide(index);
             break;
 
@@ -34,11 +34,11 @@ function NextBackground()
 
 function BackgroundSlide(bgIndex)
 {
-    if (background.style.opacity=="0")
+    if (background.style.opacity == "0")
     {
         background2.setAttribute("class", "slideright");
     } 
-    else if (background2.style.opacity=="0")
+    else if (background2.style.opacity == "0")
     {
         background.setAttribute("class", "slideright");
     }
