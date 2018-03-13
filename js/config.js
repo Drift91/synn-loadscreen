@@ -10,6 +10,11 @@ var config =
         Relative path the the logo we want to display.
     */
     image: "img/logo.png",
+
+    /*
+        Cursor image
+    */
+    cursorImage: "img/cursor.png",
  
     /*
         How big should the logo be?

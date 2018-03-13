@@ -22,6 +22,11 @@ function Init()
         logo.style.visibility = "hidden";
     }
 
+
+    var cursor = document.getElementById("cursor");
+    cursor.setAttribute("src", config.cursorImage);
+
+
     if(config.progressBarType == 0)
     {
         //Start single progressbar.
