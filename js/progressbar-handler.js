@@ -75,11 +75,9 @@ function GetTypeProgress(type)
         {
             return 0;
         }
-        else
-        {
-            var progress = states[type].done / states[type].count;
-            return Math.round(progress * 100);
-        }
+
+        var progress = states[type].done / states[type].count;
+        return Math.round(progress * 100);
     }
 
     return 0;
@@ -107,6 +105,5 @@ function GetTotalProgress()
         return 0;
     }
 
-    var progress = totalProgress / totalStates;
-    return Math.round(progress * 100);
+    return Math.round(totalProgress / totalStates);
 }
