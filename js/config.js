@@ -77,7 +77,7 @@ var config =
         "Eating FiveM's mascot snail... &#x1f374;",
         "Syntasu is snailsome! &#x1f60d;",
         "Oof!",
-        "Learning a snail to drive... &#x1f697;",
+        "Teaching a snail to drive... &#x1f697;",
         "Golfing using a snail... &#x1f3cc;",
         "Calling PETA for animal abuse... &#x1f4f1;",
         "No snails were hurt during this loadscreen. &#x1f691;",
