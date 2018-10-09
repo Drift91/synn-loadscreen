@@ -22,7 +22,12 @@ A simple loading screen resource for FiveM.
 
 ## Planned
  
-- Open for idea's! <3
+### Version 2 is planned (see issues)
+- Improve general robustness
+- Aiming for ease of use
+- Allowing greater flexibility when it comes to customizing
+- Some frequently requested features
+- General improvements.
 
 <hr>
 
@@ -55,6 +60,8 @@ And you are good to go!
 Race condition between my loadscreen resource and the events that need to get passed to the loadscreen.
 Implications are that some loadbars do not fill and upon connecting nothing happens.
 
+[Issue 10](https://github.com/Syntasu/synn-loadscreen/issues/10)
+It seems some people are affected by a bug which bugs out the loadingscreen.
 <hr>
 
 ## Contributing
@@ -90,7 +97,7 @@ The follow source(s) were used to create this resource. This might be useful for
 * [Loading Screen guide by Denziel0495](https://forum.fivem.net/t/how-to-custom-loading-screen-with-music/5746)
 * [Default loading screen of FiveM](https://github.com/citizenfx/fivem/blob/fde2bb3120cb1bc7a3ecfc31c3ff103896bd0b12/ext/ui-build/data/loadscreen/code.js)
 * [TheStonedTurtle's implementation](https://github.com/TheStonedTurtle/FiveM-PercentLoadScreen)
-* The Elements/FiveM developers in the [FiveM discord](https://discord.gg/GtvkUsc) for lending a hand.
+* The lovely people in the [FiveM discord](https://discord.gg/GtvkUsc) for lending a hand.
 
 <hr>
 
@@ -102,7 +109,3 @@ If you wish to contact me:
 
 - Via my own discord, [here](https://discord.gg/qXtJc9s) or directly: `Syntasu#8763`.
 - Via the [FiveM forums](https://forum.fivem.net/u/syntasu)
-
-&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <sub><sub>Discord is the prefered way of contact.</sub></sub>
-
-<hr>
