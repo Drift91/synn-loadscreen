@@ -151,7 +151,8 @@ var config =
     backgroundStyle: "zoom",
 
     /*
-        Should the log be visible? Handy for debugging!
+        An on-screen logger, for indicating breaking bugs! :(
+        Should we enable the on-screen logger? Handy for debugging or indicating errornous behaviour!
     */
     enableLog: true,
 }

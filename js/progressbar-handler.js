@@ -70,9 +70,12 @@ function GetTypeProgress(type)
         var doneCount = states[type].done;
         var totalCount = states[type].count;
 
-        if(doneCount <= 0 || isNaN(doneCount) || 
-           totalCount <= 0 || isNaN(totalCount))
+        if(doneCount < 0 || isNaN(doneCount) || 
+           totalCount < 0 || isNaN(totalCount))
         {
+            logger.addToLog("Failed to get the  progress of type " + type + "!");
+            dumpStatesToConsole();    
+
             return 0;
         }
 
@@ -99,11 +102,19 @@ function GetTotalProgress()
         }
     }
 
-    if(totalProgress <= 0 || isNaN(totalProgress) ||
-       totalStates <= 0 || isNaN(totalStates) )
+    if(totalProgress < 0 || isNaN(totalProgress) ||
+       totalStates < 0 || isNaN(totalStates) )
     {
+        logger.addToLog("Failed to get the total progress of the progressbar!")
+        dumpStatesToConsole();
+
         return 0;
     }
 
     return Math.round(totalProgress / totalStates);
+}
+
+function dumpStatesToConsole()
+{
+    console.log("Dumping states:" + JSON.stringify(states));
 }
