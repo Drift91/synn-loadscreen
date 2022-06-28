@@ -26,6 +26,10 @@ function NextBackground()
             AnimationZoom(index);
             break;
 
+        case "browse":
+            AnimationBrowse(index);
+            break;
+
         default:
             console.log("Unknow background animation!");
             break;
@@ -80,7 +84,7 @@ function AnimationZoom(bgIndex)
 
     setTimeout(() => 
     {
-        background.setAttribute("src", config.background[index]);
+        background.setAttribute("src", config.background[bgIndex]);
     }, 1900);
 
     setTimeout(() => 
@@ -89,5 +93,33 @@ function AnimationZoom(bgIndex)
     }, 3800);
 }
 
+function AnimationBrowse(bgIndex)
+{
+    if (background.style.opacity=="0"){
+        background.setAttribute("src", config.background[bgIndex])
+        background.style.opacity=0.3
+        background2.setAttribute("class", "browse")
+
+    } else if (background2.style.opacity=="0"){
+        background2.setAttribute("src", config.background[bgIndex])
+        background2.style.opacity=0.3
+        background.setAttribute("class", "browse")
+    }
+
+    setTimeout(() => {
+        if ( (" " + background.className + " ").replace(/[\n\t]/g, " ").indexOf(" browse ") > -1 ){
+
+            background.style.opacity=0
+
+            background.setAttribute("class", "")
+
+        }else{
+
+            background2.style.opacity=0
 
 
+            background2.setAttribute("class", "")
+        }
+
+    }, 3000);
+}

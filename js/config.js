@@ -147,8 +147,9 @@ var config =
         zoom = background zooms in and out.
         slide = transtion backgrounds from sliding right and back again.
         fade = fade the background out and back in.
+		browse = [...]
     */
-    backgroundStyle: "zoom",
+    backgroundStyle: "browse",
 
     /*
         An on-screen logger, for indicating breaking bugs! :(
